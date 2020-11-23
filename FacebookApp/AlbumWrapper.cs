@@ -6,7 +6,8 @@ using Facebook;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 using FacebookAppLogic;
-namespace FacebookApp
+
+namespace FacebookAppUI
 {
     public class AlbumWrapper
     {
@@ -16,7 +17,6 @@ namespace FacebookApp
         {
             m_Album = i_Album;
         }
-
 
         public Album GetAlbum()
         {

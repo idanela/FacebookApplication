@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FacebookApp
+namespace FacebookAppUI
 {
     public static class Program
     {

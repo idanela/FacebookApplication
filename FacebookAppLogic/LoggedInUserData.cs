@@ -141,7 +141,7 @@ namespace FacebookAppLogic
 
         public string FetchNewPhotoURL(Album i_Album, List<string> i_ExistingURL)
         {
-            bool URLNotExsists = false;
+            bool isNewURL = false;
             string photoURL = string.Empty;
             FacebookObjectCollection<Photo> photos = i_Album.Photos;
             if (i_Album.Photos.Count <= 4)
@@ -152,32 +152,16 @@ namespace FacebookAppLogic
             {
                 int indexOfPhoto = 0; ;
                 Random rand = new Random();
-                while (!URLNotExsists)
+                while (!isNewURL)
                 {
                     indexOfPhoto = rand.Next(0, i_Album.Photos.Count - 1);
-                    URLNotExsists = !i_ExistingURL.Contains(i_Album.Photos[indexOfPhoto].PictureNormalURL);
+                    isNewURL = !i_ExistingURL.Contains(i_Album.Photos[indexOfPhoto].PictureNormalURL);
                 }
 
                 photoURL = i_Album.Photos[indexOfPhoto].PictureNormalURL;
-                //}
-                //foreach (Photo photo in photos)
-                //{
-                //    isURLExsists = i_ExistingURL.Contains(photo.PictureNormalURL);
-                //    if (!isURLExsists)
-                //    {
-                //        photoURL = photo.PictureNormalURL;
-                //        break;
-                //    }
-                //}
-
-                //if(photoURL == string.Empty)
-                //{
-                //    throw new StringNullOrEmptyException("There are no more picture in this album.");
-                //}
             }
 
                 return photoURL;
-            
         }
     }
 }

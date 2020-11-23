@@ -1,0 +1,12 @@
+C:\Git\FacebookApplication\FacebookApp\bin\Debug\FacebookAppUI.exe
+C:\Git\FacebookApplication\FacebookApp\bin\Debug\FacebookAppUI.pdb
+C:\Git\FacebookApplication\FacebookApp\bin\Debug\FacebookAppLogic.dll
+C:\Git\FacebookApplication\FacebookApp\bin\Debug\FacebookAppLogic.pdb
+C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csprojAssemblyReference.cache
+C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.MainForm.resources
+C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.Properties.Resources.resources
+C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csproj.GenerateResource.cache
+C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csproj.CoreCompileInputs.cache
+C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csproj.CopyComplete
+C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.exe
+C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.pdb

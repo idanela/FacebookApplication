@@ -6,7 +6,7 @@ using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 using FacebookAppLogic;
 
-namespace FacebookApp
+namespace FacebookAppUI
 {
     public partial class MainForm : Form
     {
@@ -38,7 +38,7 @@ namespace FacebookApp
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            //this.ShowDialog();
         }
 
         private void PostButton_Click(object sender, EventArgs e)
@@ -77,7 +77,7 @@ namespace FacebookApp
         private void enableProperties()
         {
             PostButton.Enabled = true;
-            SendMessageButton.Enabled = true;
+            PostMessageButton.Enabled = true;
         }
 
         private void populateUI()
@@ -106,7 +106,7 @@ namespace FacebookApp
             MessageComboBox.Items.Add("happy birthday!!! wish you the best. I love you, have fun today :) ");
         }
 
-        private void SendMessageButton_Click(object sender, EventArgs e)
+        private void PostMessageButton_Click(object sender, EventArgs e)
         {
             try
             {

@@ -1,4 +1,4 @@
-﻿namespace FacebookApp
+﻿namespace FacebookAppUI
 {
     partial class MainForm
     {
@@ -39,7 +39,7 @@
             this.MessageComboBox = new System.Windows.Forms.ComboBox();
             this.MessageTextBox = new System.Windows.Forms.RichTextBox();
             this.AddPhotoCheckBox = new System.Windows.Forms.CheckBox();
-            this.SendMessageButton = new System.Windows.Forms.Button();
+            this.PostMessageButton = new System.Windows.Forms.Button();
             this.AlbumsLabel = new System.Windows.Forms.Label();
             this.AlbumsComboBox = new System.Windows.Forms.ComboBox();
             this.MakeCollageButton = new System.Windows.Forms.Button();
@@ -60,9 +60,10 @@
             // 
             // ProfilePictureBox
             // 
-            this.ProfilePictureBox.Location = new System.Drawing.Point(24, 26);
+            this.ProfilePictureBox.Location = new System.Drawing.Point(21, 21);
+            this.ProfilePictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProfilePictureBox.Name = "ProfilePictureBox";
-            this.ProfilePictureBox.Size = new System.Drawing.Size(168, 157);
+            this.ProfilePictureBox.Size = new System.Drawing.Size(149, 126);
             this.ProfilePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ProfilePictureBox.TabIndex = 0;
             this.ProfilePictureBox.TabStop = false;
@@ -70,35 +71,37 @@
             // UserNameLabel
             // 
             this.UserNameLabel.AutoSize = true;
-            this.UserNameLabel.Location = new System.Drawing.Point(227, 29);
+            this.UserNameLabel.Location = new System.Drawing.Point(202, 23);
             this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(89, 20);
+            this.UserNameLabel.Size = new System.Drawing.Size(79, 17);
             this.UserNameLabel.TabIndex = 1;
             this.UserNameLabel.Text = "User Name";
             // 
             // WritePostLabel
             // 
             this.WritePostLabel.AutoSize = true;
-            this.WritePostLabel.Location = new System.Drawing.Point(614, 29);
+            this.WritePostLabel.Location = new System.Drawing.Point(546, 23);
             this.WritePostLabel.Name = "WritePostLabel";
-            this.WritePostLabel.Size = new System.Drawing.Size(85, 20);
+            this.WritePostLabel.Size = new System.Drawing.Size(76, 17);
             this.WritePostLabel.TabIndex = 2;
             this.WritePostLabel.Text = "Write post:";
             // 
             // PostTextBox
             // 
-            this.PostTextBox.Location = new System.Drawing.Point(696, 26);
+            this.PostTextBox.Location = new System.Drawing.Point(619, 21);
+            this.PostTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PostTextBox.Name = "PostTextBox";
-            this.PostTextBox.Size = new System.Drawing.Size(335, 141);
+            this.PostTextBox.Size = new System.Drawing.Size(298, 114);
             this.PostTextBox.TabIndex = 3;
             this.PostTextBox.Text = "";
             // 
             // PostButton
             // 
             this.PostButton.Enabled = false;
-            this.PostButton.Location = new System.Drawing.Point(956, 193);
+            this.PostButton.Location = new System.Drawing.Point(850, 154);
+            this.PostButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PostButton.Name = "PostButton";
-            this.PostButton.Size = new System.Drawing.Size(75, 29);
+            this.PostButton.Size = new System.Drawing.Size(67, 23);
             this.PostButton.TabIndex = 4;
             this.PostButton.Text = "Post";
             this.PostButton.UseVisualStyleBackColor = true;
@@ -107,18 +110,18 @@
             // FriendsLabel
             // 
             this.FriendsLabel.AutoSize = true;
-            this.FriendsLabel.Location = new System.Drawing.Point(20, 211);
+            this.FriendsLabel.Location = new System.Drawing.Point(18, 169);
             this.FriendsLabel.Name = "FriendsLabel";
-            this.FriendsLabel.Size = new System.Drawing.Size(66, 20);
+            this.FriendsLabel.Size = new System.Drawing.Size(59, 17);
             this.FriendsLabel.TabIndex = 5;
             this.FriendsLabel.Text = "Friends:";
             // 
             // BirthdayLabel
             // 
             this.BirthdayLabel.AutoSize = true;
-            this.BirthdayLabel.Location = new System.Drawing.Point(334, 211);
+            this.BirthdayLabel.Location = new System.Drawing.Point(297, 169);
             this.BirthdayLabel.Name = "BirthdayLabel";
-            this.BirthdayLabel.Size = new System.Drawing.Size(79, 20);
+            this.BirthdayLabel.Size = new System.Drawing.Size(71, 17);
             this.BirthdayLabel.TabIndex = 7;
             this.BirthdayLabel.Text = "Birthdays:";
             this.BirthdayLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -127,66 +130,72 @@
             // 
             this.FriendsComboBox.AllowDrop = true;
             this.FriendsComboBox.FormattingEnabled = true;
-            this.FriendsComboBox.Location = new System.Drawing.Point(338, 256);
+            this.FriendsComboBox.Location = new System.Drawing.Point(300, 205);
+            this.FriendsComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FriendsComboBox.Name = "FriendsComboBox";
-            this.FriendsComboBox.Size = new System.Drawing.Size(174, 28);
+            this.FriendsComboBox.Size = new System.Drawing.Size(155, 24);
             this.FriendsComboBox.TabIndex = 8;
             this.FriendsComboBox.Text = "Choose friend";
             // 
             // MessageComboBox
             // 
             this.MessageComboBox.FormattingEnabled = true;
-            this.MessageComboBox.Location = new System.Drawing.Point(338, 302);
+            this.MessageComboBox.Location = new System.Drawing.Point(300, 242);
+            this.MessageComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MessageComboBox.Name = "MessageComboBox";
-            this.MessageComboBox.Size = new System.Drawing.Size(174, 28);
+            this.MessageComboBox.Size = new System.Drawing.Size(155, 24);
             this.MessageComboBox.TabIndex = 9;
             this.MessageComboBox.Text = "Choose message";
             this.MessageComboBox.SelectedIndexChanged += new System.EventHandler(this.MessageComboBox_SelectedIndexChanged);
             // 
             // MessageTextBox
             // 
-            this.MessageTextBox.Location = new System.Drawing.Point(338, 356);
+            this.MessageTextBox.Location = new System.Drawing.Point(300, 285);
+            this.MessageTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MessageTextBox.Name = "MessageTextBox";
-            this.MessageTextBox.Size = new System.Drawing.Size(205, 171);
+            this.MessageTextBox.Size = new System.Drawing.Size(183, 138);
             this.MessageTextBox.TabIndex = 10;
             this.MessageTextBox.Text = "";
             // 
             // AddPhotoCheckBox
             // 
             this.AddPhotoCheckBox.AutoSize = true;
-            this.AddPhotoCheckBox.Location = new System.Drawing.Point(338, 547);
+            this.AddPhotoCheckBox.Location = new System.Drawing.Point(300, 438);
+            this.AddPhotoCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddPhotoCheckBox.Name = "AddPhotoCheckBox";
-            this.AddPhotoCheckBox.Size = new System.Drawing.Size(212, 24);
+            this.AddPhotoCheckBox.Size = new System.Drawing.Size(187, 21);
             this.AddPhotoCheckBox.TabIndex = 11;
             this.AddPhotoCheckBox.Text = "Add photo of us together";
             this.AddPhotoCheckBox.UseVisualStyleBackColor = true;
             // 
-            // SendMessageButton
+            // PostMessageButton
             // 
-            this.SendMessageButton.Enabled = false;
-            this.SendMessageButton.Location = new System.Drawing.Point(338, 596);
-            this.SendMessageButton.Name = "SendMessageButton";
-            this.SendMessageButton.Size = new System.Drawing.Size(145, 28);
-            this.SendMessageButton.TabIndex = 12;
-            this.SendMessageButton.Text = "Send message";
-            this.SendMessageButton.UseVisualStyleBackColor = true;
-            this.SendMessageButton.Click += new System.EventHandler(this.SendMessageButton_Click);
+            this.PostMessageButton.Enabled = false;
+            this.PostMessageButton.Location = new System.Drawing.Point(300, 477);
+            this.PostMessageButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PostMessageButton.Name = "PostMessageButton";
+            this.PostMessageButton.Size = new System.Drawing.Size(129, 29);
+            this.PostMessageButton.TabIndex = 12;
+            this.PostMessageButton.Text = "Post message";
+            this.PostMessageButton.UseVisualStyleBackColor = true;
+            this.PostMessageButton.Click += new System.EventHandler(this.PostMessageButton_Click);
             // 
             // AlbumsLabel
             // 
             this.AlbumsLabel.AutoSize = true;
-            this.AlbumsLabel.Location = new System.Drawing.Point(633, 211);
+            this.AlbumsLabel.Location = new System.Drawing.Point(563, 169);
             this.AlbumsLabel.Name = "AlbumsLabel";
-            this.AlbumsLabel.Size = new System.Drawing.Size(66, 20);
+            this.AlbumsLabel.Size = new System.Drawing.Size(58, 17);
             this.AlbumsLabel.TabIndex = 13;
             this.AlbumsLabel.Text = "Albums:";
             // 
             // AlbumsComboBox
             // 
             this.AlbumsComboBox.FormattingEnabled = true;
-            this.AlbumsComboBox.Location = new System.Drawing.Point(637, 256);
+            this.AlbumsComboBox.Location = new System.Drawing.Point(566, 205);
+            this.AlbumsComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AlbumsComboBox.Name = "AlbumsComboBox";
-            this.AlbumsComboBox.Size = new System.Drawing.Size(328, 28);
+            this.AlbumsComboBox.Size = new System.Drawing.Size(292, 24);
             this.AlbumsComboBox.TabIndex = 14;
             this.AlbumsComboBox.Text = "Choose album";
             this.AlbumsComboBox.SelectedIndexChanged += new System.EventHandler(this.AlbumsComboBox_SelectedIndexChanged);
@@ -194,9 +203,10 @@
             // MakeCollageButton
             // 
             this.MakeCollageButton.Enabled = false;
-            this.MakeCollageButton.Location = new System.Drawing.Point(637, 302);
+            this.MakeCollageButton.Location = new System.Drawing.Point(566, 242);
+            this.MakeCollageButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MakeCollageButton.Name = "MakeCollageButton";
-            this.MakeCollageButton.Size = new System.Drawing.Size(175, 28);
+            this.MakeCollageButton.Size = new System.Drawing.Size(156, 30);
             this.MakeCollageButton.TabIndex = 15;
             this.MakeCollageButton.Text = "Make photo collage";
             this.MakeCollageButton.UseVisualStyleBackColor = true;
@@ -205,18 +215,19 @@
             // ClickOnPhotoLabel
             // 
             this.ClickOnPhotoLabel.AutoSize = true;
-            this.ClickOnPhotoLabel.Location = new System.Drawing.Point(633, 359);
+            this.ClickOnPhotoLabel.Location = new System.Drawing.Point(563, 287);
             this.ClickOnPhotoLabel.Name = "ClickOnPhotoLabel";
-            this.ClickOnPhotoLabel.Size = new System.Drawing.Size(218, 20);
+            this.ClickOnPhotoLabel.Size = new System.Drawing.Size(196, 17);
             this.ClickOnPhotoLabel.TabIndex = 16;
             this.ClickOnPhotoLabel.Text = "* Click on a photo to replace it";
             // 
             // TopRightPictureBox
             // 
             this.TopRightPictureBox.Enabled = false;
-            this.TopRightPictureBox.Location = new System.Drawing.Point(733, 423);
+            this.TopRightPictureBox.Location = new System.Drawing.Point(652, 338);
+            this.TopRightPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TopRightPictureBox.Name = "TopRightPictureBox";
-            this.TopRightPictureBox.Size = new System.Drawing.Size(106, 92);
+            this.TopRightPictureBox.Size = new System.Drawing.Size(94, 74);
             this.TopRightPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.TopRightPictureBox.TabIndex = 17;
             this.TopRightPictureBox.TabStop = false;
@@ -225,9 +236,10 @@
             // TopLeftPictureBox
             // 
             this.TopLeftPictureBox.Enabled = false;
-            this.TopLeftPictureBox.Location = new System.Drawing.Point(637, 423);
+            this.TopLeftPictureBox.Location = new System.Drawing.Point(566, 338);
+            this.TopLeftPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TopLeftPictureBox.Name = "TopLeftPictureBox";
-            this.TopLeftPictureBox.Size = new System.Drawing.Size(106, 92);
+            this.TopLeftPictureBox.Size = new System.Drawing.Size(94, 74);
             this.TopLeftPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.TopLeftPictureBox.TabIndex = 19;
             this.TopLeftPictureBox.TabStop = false;
@@ -236,9 +248,10 @@
             // BottomRightPictureBox
             // 
             this.BottomRightPictureBox.Enabled = false;
-            this.BottomRightPictureBox.Location = new System.Drawing.Point(733, 512);
+            this.BottomRightPictureBox.Location = new System.Drawing.Point(652, 410);
+            this.BottomRightPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BottomRightPictureBox.Name = "BottomRightPictureBox";
-            this.BottomRightPictureBox.Size = new System.Drawing.Size(106, 92);
+            this.BottomRightPictureBox.Size = new System.Drawing.Size(94, 74);
             this.BottomRightPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BottomRightPictureBox.TabIndex = 20;
             this.BottomRightPictureBox.TabStop = false;
@@ -247,9 +260,10 @@
             // BottomLeftPictureBox
             // 
             this.BottomLeftPictureBox.Enabled = false;
-            this.BottomLeftPictureBox.Location = new System.Drawing.Point(637, 512);
+            this.BottomLeftPictureBox.Location = new System.Drawing.Point(566, 410);
+            this.BottomLeftPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BottomLeftPictureBox.Name = "BottomLeftPictureBox";
-            this.BottomLeftPictureBox.Size = new System.Drawing.Size(106, 92);
+            this.BottomLeftPictureBox.Size = new System.Drawing.Size(94, 74);
             this.BottomLeftPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BottomLeftPictureBox.TabIndex = 21;
             this.BottomLeftPictureBox.TabStop = false;
@@ -257,9 +271,10 @@
             // 
             // LoginButton
             // 
-            this.LoginButton.Location = new System.Drawing.Point(231, 98);
+            this.LoginButton.Location = new System.Drawing.Point(205, 78);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(75, 28);
+            this.LoginButton.Size = new System.Drawing.Size(67, 22);
             this.LoginButton.TabIndex = 22;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
@@ -268,27 +283,29 @@
             // FriendsListBox
             // 
             this.FriendsListBox.FormattingEnabled = true;
-            this.FriendsListBox.ItemHeight = 20;
-            this.FriendsListBox.Location = new System.Drawing.Point(24, 256);
+            this.FriendsListBox.ItemHeight = 16;
+            this.FriendsListBox.Location = new System.Drawing.Point(21, 205);
+            this.FriendsListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FriendsListBox.Name = "FriendsListBox";
-            this.FriendsListBox.Size = new System.Drawing.Size(156, 364);
+            this.FriendsListBox.Size = new System.Drawing.Size(139, 292);
             this.FriendsListBox.TabIndex = 23;
             // 
             // RememberMeCheckBox
             // 
             this.RememberMeCheckBox.AutoSize = true;
-            this.RememberMeCheckBox.Location = new System.Drawing.Point(231, 159);
+            this.RememberMeCheckBox.Location = new System.Drawing.Point(205, 127);
+            this.RememberMeCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RememberMeCheckBox.Name = "RememberMeCheckBox";
-            this.RememberMeCheckBox.Size = new System.Drawing.Size(140, 24);
+            this.RememberMeCheckBox.Size = new System.Drawing.Size(122, 21);
             this.RememberMeCheckBox.TabIndex = 24;
             this.RememberMeCheckBox.Text = "Remember Me";
             this.RememberMeCheckBox.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 680);
+            this.ClientSize = new System.Drawing.Size(1004, 544);
             this.Controls.Add(this.RememberMeCheckBox);
             this.Controls.Add(this.FriendsListBox);
             this.Controls.Add(this.LoginButton);
@@ -300,7 +317,7 @@
             this.Controls.Add(this.MakeCollageButton);
             this.Controls.Add(this.AlbumsComboBox);
             this.Controls.Add(this.AlbumsLabel);
-            this.Controls.Add(this.SendMessageButton);
+            this.Controls.Add(this.PostMessageButton);
             this.Controls.Add(this.AddPhotoCheckBox);
             this.Controls.Add(this.MessageTextBox);
             this.Controls.Add(this.MessageComboBox);
@@ -312,6 +329,7 @@
             this.Controls.Add(this.WritePostLabel);
             this.Controls.Add(this.UserNameLabel);
             this.Controls.Add(this.ProfilePictureBox);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -338,7 +356,7 @@
         private System.Windows.Forms.ComboBox MessageComboBox;
         private System.Windows.Forms.RichTextBox MessageTextBox;
         private System.Windows.Forms.CheckBox AddPhotoCheckBox;
-        private System.Windows.Forms.Button SendMessageButton;
+        private System.Windows.Forms.Button PostMessageButton;
         private System.Windows.Forms.Label AlbumsLabel;
         private System.Windows.Forms.ComboBox AlbumsComboBox;
         private System.Windows.Forms.Button MakeCollageButton;

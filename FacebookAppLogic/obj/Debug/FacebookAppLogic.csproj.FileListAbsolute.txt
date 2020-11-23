@@ -7,3 +7,10 @@ C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\obj\Debug\Fac
 C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\obj\Debug\FacebookAppLogic.csproj.CopyComplete
 C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\obj\Debug\FacebookAppLogic.dll
 C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\obj\Debug\FacebookAppLogic.pdb
+C:\Git\FacebookApplication\FacebookAppLogic\bin\Debug\FacebookAppLogic.dll
+C:\Git\FacebookApplication\FacebookAppLogic\bin\Debug\FacebookAppLogic.pdb
+C:\Git\FacebookApplication\FacebookAppLogic\obj\Debug\FacebookAppLogic.csprojAssemblyReference.cache
+C:\Git\FacebookApplication\FacebookAppLogic\obj\Debug\FacebookAppLogic.csproj.CoreCompileInputs.cache
+C:\Git\FacebookApplication\FacebookAppLogic\obj\Debug\FacebookAppLogic.csproj.CopyComplete
+C:\Git\FacebookApplication\FacebookAppLogic\obj\Debug\FacebookAppLogic.dll
+C:\Git\FacebookApplication\FacebookAppLogic\obj\Debug\FacebookAppLogic.pdb
