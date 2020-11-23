@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\bin\Debug\FacebookAppLogic.dll
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\bin\Debug\FacebookAppLogic.pdb
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\bin\Debug\Facebook.dll
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\bin\Debug\FbGraphApiWrapper.dll
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\obj\Debug\FacebookAppLogic.csprojAssemblyReference.cache
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\obj\Debug\FacebookAppLogic.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\obj\Debug\FacebookAppLogic.csproj.CopyComplete
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\obj\Debug\FacebookAppLogic.dll
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookAppLogic\obj\Debug\FacebookAppLogic.pdb

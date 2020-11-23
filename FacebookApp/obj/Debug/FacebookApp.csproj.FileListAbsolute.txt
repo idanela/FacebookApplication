@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\bin\Debug\FacebookApp.exe
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\bin\Debug\FacebookApp.pdb
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\bin\Debug\Facebook.dll
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\bin\Debug\FacebookAppLogic.dll
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\bin\Debug\FbGraphApiWrapper.dll
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\bin\Debug\FacebookAppLogic.pdb
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\obj\Debug\FacebookApp.csprojAssemblyReference.cache
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\obj\Debug\FacebookApp.MainForm.resources
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\obj\Debug\FacebookApp.Properties.Resources.resources
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\obj\Debug\FacebookApp.csproj.GenerateResource.cache
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\obj\Debug\FacebookApp.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\obj\Debug\FacebookApp.csproj.CopyComplete
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\obj\Debug\FacebookApp.exe
+C:\Users\User\Desktop\design_patterns\FacebookApp\FacebookApp\obj\Debug\FacebookApp.pdb
