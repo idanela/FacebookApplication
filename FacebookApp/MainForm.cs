@@ -28,9 +28,7 @@ namespace FacebookAppUI
             if(RememberMeCheckBox.Checked && !string.IsNullOrEmpty (r_AppSettings.LastAccessToken))
             {
                 m_LoginResult = FacebookService.Connect(r_AppSettings.LastAccessToken);
-                m_LoggedInUser = new LoggedInUserData(m_LoginResult);
-                enableProperties();
-                populateUI();
+                updateAppUI();
             }
 
             base.OnShown(e);
@@ -38,7 +36,6 @@ namespace FacebookAppUI
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //this.ShowDialog();
         }
 
         private void PostButton_Click(object sender, EventArgs e)
@@ -60,6 +57,12 @@ namespace FacebookAppUI
         private void LoginButton_Click(object sender, EventArgs e)
         {
             loginToFacebook();
+            updateAppUI();
+        }
+
+        private void updateAppUI()
+        {
+            m_LoggedInUser = new LoggedInUserData(m_LoginResult);
             enableProperties();
             populateUI();
         }
@@ -71,7 +74,6 @@ namespace FacebookAppUI
                 "user_friends",
                 "user_photos",
                 "user_posts");
-            m_LoggedInUser = new LoggedInUserData(m_LoginResult);
         }
 
         private void enableProperties()
@@ -231,12 +233,10 @@ namespace FacebookAppUI
             {
                 r_AppSettings.SaveToFile();
             }
-            catch(Exception)
+            catch (Exception )
             {
                 MessageBox.Show("A problem occured with saving To File");
             }
-
-
         }
     }
 }

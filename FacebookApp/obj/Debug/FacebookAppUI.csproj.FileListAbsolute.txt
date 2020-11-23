@@ -10,3 +10,15 @@ C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csproj.CoreCompil
 C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csproj.CopyComplete
 C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.exe
 C:\Git\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.pdb
+D:\Documents\GitHub\FacebookApplication\FacebookApp\bin\Debug\FacebookAppUI.exe
+D:\Documents\GitHub\FacebookApplication\FacebookApp\bin\Debug\FacebookAppUI.pdb
+D:\Documents\GitHub\FacebookApplication\FacebookApp\bin\Debug\FacebookAppLogic.dll
+D:\Documents\GitHub\FacebookApplication\FacebookApp\bin\Debug\FacebookAppLogic.pdb
+D:\Documents\GitHub\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csprojAssemblyReference.cache
+D:\Documents\GitHub\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.MainForm.resources
+D:\Documents\GitHub\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.Properties.Resources.resources
+D:\Documents\GitHub\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csproj.GenerateResource.cache
+D:\Documents\GitHub\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.csproj.CopyComplete
+D:\Documents\GitHub\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.exe
+D:\Documents\GitHub\FacebookApplication\FacebookApp\obj\Debug\FacebookAppUI.pdb

@@ -10,6 +10,8 @@ namespace FacebookAppUI
         public Size LastWindowSize { get; set; }
         public bool RememberUser { get; set; }
         public string LastAccessToken { get; set; }
+        private const string k_AppsetiingXmlName = "\\AppSettings.xml";
+
 
         private AppSettings()
         {
@@ -21,28 +23,39 @@ namespace FacebookAppUI
 
         public void SaveToFile()
         {
-            using (Stream stream = new FileStream(@"D:\appSettings.xml", FileMode.Truncate))
+            if(File.Exists(Directory.GetCurrentDirectory() + k_AppsetiingXmlName))
             {
-                XmlSerializer serializer = new XmlSerializer(this.GetType());
-                serializer.Serialize(stream, this);
+                using (Stream stream = new FileStream(Directory.GetCurrentDirectory() + k_AppsetiingXmlName, FileMode.Truncate))
+                {
+                    XmlSerializer serializer = new XmlSerializer(this.GetType());
+                    serializer.Serialize(stream, this);
+                }
             }
+            else
+            {
+                using (Stream stream = new FileStream(Directory.GetCurrentDirectory() + k_AppsetiingXmlName, FileMode.Create))
+                {
+                    XmlSerializer serializer = new XmlSerializer(this.GetType());
+                    serializer.Serialize(stream, this);
+                }
+            }
+            
         }
 
         public static AppSettings LoadFromFile()
         {
             AppSettings appSettings = null;
 
-            if(File.Exists(@"D:\appSettings.xml"))
+            if(File.Exists(Directory.GetCurrentDirectory() + k_AppsetiingXmlName))
             {
-                    using (Stream stream = new FileStream(@"D:\appSettings.xml", FileMode.Open))
-                    {
-                        XmlSerializer serializer = new XmlSerializer(typeof(AppSettings));
-                        appSettings = serializer.Deserialize(stream) as AppSettings;
-                    }
+                using (Stream stream = new FileStream(Directory.GetCurrentDirectory() + k_AppsetiingXmlName, FileMode.Open))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(AppSettings));
+                    appSettings = serializer.Deserialize(stream) as AppSettings;
+                }
             }
             else
             {
-                Stream stream = new FileStream(@"D:\appSettings.xml", FileMode.Create);
                 appSettings = new AppSettings();
             }
 
