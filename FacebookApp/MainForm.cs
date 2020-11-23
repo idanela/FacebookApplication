@@ -104,10 +104,17 @@ namespace FacebookAppUI
             }
 
             UserNameLabel.Text = string.Format("Hi, {0}", m_LoginResult.LoggedInUser.FirstName);
-            MessageComboBox.Items.Add("Mazal Tov!!! :) ");
-            MessageComboBox.Items.Add("happy birthday!!! wish you the best. I love you, have fun today :) ");
+            addBirthdayMesages();
         }
 
+        private void addBirthdayMesages()
+        {
+            MessageComboBox.Items.Add("Mazal Tov!!! :) ");
+            MessageComboBox.Items.Add("happy birthday!!! wish you the best. I love you, have fun today :) ");
+            MessageComboBox.Items.Add("Have a fabulous day filled with all the good things you love in life and more! ");
+            MessageComboBox.Items.Add("I wish you all the happiness your heart can hold. Have a wonderful day. ");
+            MessageComboBox.Items.Add("wishing you happy birhday, filled with love, joy and happiness.");
+        }
         private void PostMessageButton_Click(object sender, EventArgs e)
         {
             try
