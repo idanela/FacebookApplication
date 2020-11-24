@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<AppSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LastWindowLocation>
+    <X>50</X>
+    <Y>50</Y>
+  </LastWindowLocation>
+  <LastWindowSize>
+    <Width>1100</Width>
+    <Height>750</Height>
+  </LastWindowSize>
+  <RememberUser>false</RememberUser>
+</AppSettings>
