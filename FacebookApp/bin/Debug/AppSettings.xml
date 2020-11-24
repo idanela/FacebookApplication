@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <AppSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LastWindowLocation>
-    <X>231</X>
-    <Y>135</Y>
+    <X>50</X>
+    <Y>50</Y>
   </LastWindowLocation>
   <LastWindowSize>
-    <Width>1192</Width>
-    <Height>859</Height>
+    <Width>1100</Width>
+    <Height>750</Height>
   </LastWindowSize>
-  <RememberUser>true</RememberUser>
-  <LastAccessToken>EAAEHZA9i2XU0BAK2kBbhASgzPeN10GbHwpOuUYR0seb75F5Fjoc2ZBZArX8KjaOfUlqdDk8SNqqZAUTbqDarHJzX4ES0rnFgNIFmgir9FRfxCQJak1RUPCQ1H2rj1oYBGI5D1NEvKPypKvNyHaqFMX6fZBE8j3g8ZD</LastAccessToken>
+  <RememberUser>false</RememberUser>
 </AppSettings>

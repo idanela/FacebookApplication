@@ -12,11 +12,27 @@ namespace FacebookAppUI
     {
         private LoginResult m_LoginResult;
         private LoggedInUserData m_LoggedInUser;
-        private readonly AppSettings r_AppSettings = AppSettings.LoadFromFile();
+        private static readonly AppSettings r_AppSettings = getAppSettings();
 
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private static AppSettings getAppSettings()
+        {
+            AppSettings appSetting = null;
+
+            try
+            {
+               appSetting = AppSettings.CreateDefaultOrLoadDataFromFile();
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Having problem loading from file.");
+            }
+
+            return appSetting;
         }
 
         protected override void OnShown(EventArgs e)
@@ -25,6 +41,7 @@ namespace FacebookAppUI
             Location = r_AppSettings.LastWindowLocation;
             Size = r_AppSettings.LastWindowSize;
             RememberMeCheckBox.Checked = r_AppSettings.RememberUser;
+
             if(RememberMeCheckBox.Checked && !string.IsNullOrEmpty (r_AppSettings.LastAccessToken))
             {
                 m_LoginResult = FacebookService.Connect(r_AppSettings.LastAccessToken);
@@ -100,15 +117,15 @@ namespace FacebookAppUI
             }
 
             UserNameLabel.Text = string.Format("Hi, {0}", m_LoginResult.LoggedInUser.FirstName);
-            addBirthdayMesages();
+            addBirthdayMessages();
         }
 
-        private void addBirthdayMesages()
+        private void addBirthdayMessages()
         {
             MessageComboBox.Items.Add("Mazal Tov!!! :) ");
-            MessageComboBox.Items.Add("happy birthday!!! wish you the best. I love you, have fun today :) ");
-            MessageComboBox.Items.Add("Have a fabulous day filled with all the good things you love in life! ");
-            MessageComboBox.Items.Add("I wish you all the happiness your heart can hold. Have a wonderful day. ");
+            MessageComboBox.Items.Add("happy birthday!!! wish you the best. I love you, have fun today :)");
+            MessageComboBox.Items.Add("Have a fabulous day filled with all the good things you love in life!");
+            MessageComboBox.Items.Add("I wish you all the happiness your heart can hold. Have a wonderful day.");
             MessageComboBox.Items.Add("wishing you happy birhday, filled with love, joy and happiness.");
         }
         private void PostMessageButton_Click(object sender, EventArgs e)
@@ -127,7 +144,6 @@ namespace FacebookAppUI
                 MessageBox.Show(exeption.Message);
 
             }
-         
         }
 
         private void MakeCollageButton_Click(object sender, EventArgs e)
@@ -139,27 +155,32 @@ namespace FacebookAppUI
         {
             try
             {
-                List<string> photoURLForCollage = m_LoggedInUser.FetchPhotosForCollage(i_Album);
-                TopLeftPictureBox.Load(photoURLForCollage[0]);
-                TopRightPictureBox.Load(photoURLForCollage[1]);
-                BottomLeftPictureBox.Load(photoURLForCollage[2]);
-                BottomRightPictureBox.Load(photoURLForCollage[3]);
-
-                TopLeftPictureBox.Tag = photoURLForCollage[0];
-                TopRightPictureBox.Tag = photoURLForCollage[1];
-                BottomLeftPictureBox.Tag = photoURLForCollage[2];
-                BottomRightPictureBox.Tag = photoURLForCollage[3];
-
-                TopLeftPictureBox.Enabled = true;
-                TopRightPictureBox.Enabled = true;
-                BottomRightPictureBox.Enabled = true;
-                BottomLeftPictureBox.Enabled = true;
+                initializeCollage(i_Album);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }   
+
+        private void initializeCollage(Album i_Album)
+        {
+            List<string> photoURLForCollage = m_LoggedInUser.FetchPhotosForCollage(i_Album);
+            TopLeftPictureBox.Load(photoURLForCollage[0]);
+            TopRightPictureBox.Load(photoURLForCollage[1]);
+            BottomLeftPictureBox.Load(photoURLForCollage[2]);
+            BottomRightPictureBox.Load(photoURLForCollage[3]);
+
+            TopLeftPictureBox.Tag = photoURLForCollage[0];
+            TopRightPictureBox.Tag = photoURLForCollage[1];
+            BottomLeftPictureBox.Tag = photoURLForCollage[2];
+            BottomRightPictureBox.Tag = photoURLForCollage[3];
+
+            TopLeftPictureBox.Enabled = true;
+            TopRightPictureBox.Enabled = true;
+            BottomRightPictureBox.Enabled = true;
+            BottomLeftPictureBox.Enabled = true;
+        }
 
         private void BottomLeftPictureBox_Click(object sender, EventArgs e)
         {
@@ -189,6 +210,7 @@ namespace FacebookAppUI
             {
                 List<string> AllExistingURLs = getAllExistingURLs();
                 string newPhotoURL = m_LoggedInUser.FetchNewPhotoURL((AlbumsComboBox.SelectedItem as AlbumWrapper).GetAlbum(), AllExistingURLs);
+
                 i_PictureBoxToUpdate.Load(newPhotoURL);
                 i_PictureBoxToUpdate.Tag = newPhotoURL;
             }
@@ -201,6 +223,7 @@ namespace FacebookAppUI
         private List<string> getAllExistingURLs()
         {
             List<string> allExistingURLs = new List<string>();
+
             allExistingURLs.Add(TopLeftPictureBox.Tag.ToString());
             allExistingURLs.Add(TopRightPictureBox.Tag.ToString());
             allExistingURLs.Add(BottomLeftPictureBox.Tag.ToString());
@@ -221,25 +244,29 @@ namespace FacebookAppUI
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
-            r_AppSettings.LastWindowLocation = Location;
-            r_AppSettings.LastWindowSize = Size;
-            r_AppSettings.RememberUser = RememberMeCheckBox.Checked;
-            if (r_AppSettings.RememberUser)
+            
+            if(r_AppSettings != null)
             {
-                r_AppSettings.LastAccessToken = m_LoginResult == null ? null : m_LoginResult.AccessToken;
-            }
-            else
-            {
-                r_AppSettings.LastAccessToken = null;
-            }
-            try
-            {
-                r_AppSettings.SaveToFile();
-            }
-            catch (Exception )
-            {
-                MessageBox.Show("A problem occured with saving To File");
-            }
+                r_AppSettings.LastWindowLocation = Location;
+                r_AppSettings.LastWindowSize = Size;
+                r_AppSettings.RememberUser = RememberMeCheckBox.Checked;
+                if (r_AppSettings.RememberUser)
+                {
+                    r_AppSettings.LastAccessToken = m_LoginResult == null ? null : m_LoginResult.AccessToken;
+                }
+                else
+                {
+                    r_AppSettings.LastAccessToken = null;
+                }
+                try
+                {
+                    r_AppSettings.SaveToFile();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("A problem occured with saving To File");
+                }
+            }      
         }
     }
 }

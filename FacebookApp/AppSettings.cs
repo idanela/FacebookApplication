@@ -42,7 +42,7 @@ namespace FacebookAppUI
             
         }
 
-        public static AppSettings LoadFromFile()
+        public static AppSettings CreateDefaultOrLoadDataFromFile()
         {
             AppSettings appSettings = null;
 
@@ -58,7 +58,7 @@ namespace FacebookAppUI
             {
                 appSettings = new AppSettings();
             }
-
+            
             return appSettings;      
         }
     }

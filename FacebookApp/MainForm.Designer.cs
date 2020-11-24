@@ -73,9 +73,9 @@
             this.UserNameLabel.AutoSize = true;
             this.UserNameLabel.Location = new System.Drawing.Point(227, 29);
             this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(89, 20);
+            this.UserNameLabel.Size = new System.Drawing.Size(259, 20);
             this.UserNameLabel.TabIndex = 1;
-            this.UserNameLabel.Text = "User Name";
+            this.UserNameLabel.Text = "Press Login to connect to facebook";
             // 
             // WritePostLabel
             // 
@@ -133,7 +133,7 @@
             this.FriendsComboBox.Location = new System.Drawing.Point(241, 256);
             this.FriendsComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FriendsComboBox.Name = "FriendsComboBox";
-            this.FriendsComboBox.Size = new System.Drawing.Size(509, 28);
+            this.FriendsComboBox.Size = new System.Drawing.Size(497, 28);
             this.FriendsComboBox.TabIndex = 8;
             this.FriendsComboBox.Text = "Choose friend";
             // 
@@ -143,7 +143,7 @@
             this.MessageComboBox.Location = new System.Drawing.Point(241, 296);
             this.MessageComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MessageComboBox.Name = "MessageComboBox";
-            this.MessageComboBox.Size = new System.Drawing.Size(509, 28);
+            this.MessageComboBox.Size = new System.Drawing.Size(497, 28);
             this.MessageComboBox.TabIndex = 9;
             this.MessageComboBox.Text = "Choose message";
             this.MessageComboBox.SelectedIndexChanged += new System.EventHandler(this.MessageComboBox_SelectedIndexChanged);
@@ -183,7 +183,7 @@
             // AlbumsLabel
             // 
             this.AlbumsLabel.AutoSize = true;
-            this.AlbumsLabel.Location = new System.Drawing.Point(705, 211);
+            this.AlbumsLabel.Location = new System.Drawing.Point(803, 211);
             this.AlbumsLabel.Name = "AlbumsLabel";
             this.AlbumsLabel.Size = new System.Drawing.Size(66, 20);
             this.AlbumsLabel.TabIndex = 13;
