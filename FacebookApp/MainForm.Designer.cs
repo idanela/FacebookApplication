@@ -119,7 +119,7 @@
             // BirthdayLabel
             // 
             this.BirthdayLabel.AutoSize = true;
-            this.BirthdayLabel.Location = new System.Drawing.Point(258, 211);
+            this.BirthdayLabel.Location = new System.Drawing.Point(237, 211);
             this.BirthdayLabel.Name = "BirthdayLabel";
             this.BirthdayLabel.Size = new System.Drawing.Size(79, 20);
             this.BirthdayLabel.TabIndex = 7;
@@ -130,37 +130,37 @@
             // 
             this.FriendsComboBox.AllowDrop = true;
             this.FriendsComboBox.FormattingEnabled = true;
-            this.FriendsComboBox.Location = new System.Drawing.Point(262, 256);
+            this.FriendsComboBox.Location = new System.Drawing.Point(241, 256);
             this.FriendsComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FriendsComboBox.Name = "FriendsComboBox";
-            this.FriendsComboBox.Size = new System.Drawing.Size(288, 28);
+            this.FriendsComboBox.Size = new System.Drawing.Size(509, 28);
             this.FriendsComboBox.TabIndex = 8;
             this.FriendsComboBox.Text = "Choose friend";
             // 
             // MessageComboBox
             // 
             this.MessageComboBox.FormattingEnabled = true;
-            this.MessageComboBox.Location = new System.Drawing.Point(262, 302);
+            this.MessageComboBox.Location = new System.Drawing.Point(241, 296);
             this.MessageComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MessageComboBox.Name = "MessageComboBox";
-            this.MessageComboBox.Size = new System.Drawing.Size(288, 28);
+            this.MessageComboBox.Size = new System.Drawing.Size(509, 28);
             this.MessageComboBox.TabIndex = 9;
             this.MessageComboBox.Text = "Choose message";
             this.MessageComboBox.SelectedIndexChanged += new System.EventHandler(this.MessageComboBox_SelectedIndexChanged);
             // 
             // MessageTextBox
             // 
-            this.MessageTextBox.Location = new System.Drawing.Point(262, 356);
+            this.MessageTextBox.Location = new System.Drawing.Point(241, 353);
             this.MessageTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MessageTextBox.Name = "MessageTextBox";
-            this.MessageTextBox.Size = new System.Drawing.Size(281, 172);
+            this.MessageTextBox.Size = new System.Drawing.Size(509, 172);
             this.MessageTextBox.TabIndex = 10;
             this.MessageTextBox.Text = "";
             // 
             // AddPhotoCheckBox
             // 
             this.AddPhotoCheckBox.AutoSize = true;
-            this.AddPhotoCheckBox.Location = new System.Drawing.Point(262, 545);
+            this.AddPhotoCheckBox.Location = new System.Drawing.Point(241, 546);
             this.AddPhotoCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddPhotoCheckBox.Name = "AddPhotoCheckBox";
             this.AddPhotoCheckBox.Size = new System.Drawing.Size(212, 24);
@@ -171,7 +171,7 @@
             // PostMessageButton
             // 
             this.PostMessageButton.Enabled = false;
-            this.PostMessageButton.Location = new System.Drawing.Point(262, 584);
+            this.PostMessageButton.Location = new System.Drawing.Point(241, 584);
             this.PostMessageButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PostMessageButton.Name = "PostMessageButton";
             this.PostMessageButton.Size = new System.Drawing.Size(145, 36);
@@ -183,7 +183,7 @@
             // AlbumsLabel
             // 
             this.AlbumsLabel.AutoSize = true;
-            this.AlbumsLabel.Location = new System.Drawing.Point(692, 211);
+            this.AlbumsLabel.Location = new System.Drawing.Point(705, 211);
             this.AlbumsLabel.Name = "AlbumsLabel";
             this.AlbumsLabel.Size = new System.Drawing.Size(66, 20);
             this.AlbumsLabel.TabIndex = 13;
@@ -192,7 +192,7 @@
             // AlbumsComboBox
             // 
             this.AlbumsComboBox.FormattingEnabled = true;
-            this.AlbumsComboBox.Location = new System.Drawing.Point(637, 256);
+            this.AlbumsComboBox.Location = new System.Drawing.Point(807, 256);
             this.AlbumsComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AlbumsComboBox.Name = "AlbumsComboBox";
             this.AlbumsComboBox.Size = new System.Drawing.Size(241, 28);
@@ -203,7 +203,7 @@
             // MakeCollageButton
             // 
             this.MakeCollageButton.Enabled = false;
-            this.MakeCollageButton.Location = new System.Drawing.Point(637, 302);
+            this.MakeCollageButton.Location = new System.Drawing.Point(807, 296);
             this.MakeCollageButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MakeCollageButton.Name = "MakeCollageButton";
             this.MakeCollageButton.Size = new System.Drawing.Size(176, 38);
@@ -215,7 +215,7 @@
             // ClickOnPhotoLabel
             // 
             this.ClickOnPhotoLabel.AutoSize = true;
-            this.ClickOnPhotoLabel.Location = new System.Drawing.Point(633, 359);
+            this.ClickOnPhotoLabel.Location = new System.Drawing.Point(803, 356);
             this.ClickOnPhotoLabel.Name = "ClickOnPhotoLabel";
             this.ClickOnPhotoLabel.Size = new System.Drawing.Size(218, 20);
             this.ClickOnPhotoLabel.TabIndex = 16;
@@ -224,10 +224,10 @@
             // TopRightPictureBox
             // 
             this.TopRightPictureBox.Enabled = false;
-            this.TopRightPictureBox.Location = new System.Drawing.Point(734, 422);
+            this.TopRightPictureBox.Location = new System.Drawing.Point(917, 385);
             this.TopRightPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TopRightPictureBox.Name = "TopRightPictureBox";
-            this.TopRightPictureBox.Size = new System.Drawing.Size(106, 92);
+            this.TopRightPictureBox.Size = new System.Drawing.Size(140, 140);
             this.TopRightPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.TopRightPictureBox.TabIndex = 17;
             this.TopRightPictureBox.TabStop = false;
@@ -236,10 +236,10 @@
             // TopLeftPictureBox
             // 
             this.TopLeftPictureBox.Enabled = false;
-            this.TopLeftPictureBox.Location = new System.Drawing.Point(637, 422);
+            this.TopLeftPictureBox.Location = new System.Drawing.Point(782, 385);
             this.TopLeftPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TopLeftPictureBox.Name = "TopLeftPictureBox";
-            this.TopLeftPictureBox.Size = new System.Drawing.Size(106, 92);
+            this.TopLeftPictureBox.Size = new System.Drawing.Size(140, 140);
             this.TopLeftPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.TopLeftPictureBox.TabIndex = 19;
             this.TopLeftPictureBox.TabStop = false;
@@ -248,10 +248,10 @@
             // BottomRightPictureBox
             // 
             this.BottomRightPictureBox.Enabled = false;
-            this.BottomRightPictureBox.Location = new System.Drawing.Point(734, 512);
+            this.BottomRightPictureBox.Location = new System.Drawing.Point(917, 520);
             this.BottomRightPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BottomRightPictureBox.Name = "BottomRightPictureBox";
-            this.BottomRightPictureBox.Size = new System.Drawing.Size(106, 92);
+            this.BottomRightPictureBox.Size = new System.Drawing.Size(140, 140);
             this.BottomRightPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BottomRightPictureBox.TabIndex = 20;
             this.BottomRightPictureBox.TabStop = false;
@@ -260,10 +260,10 @@
             // BottomLeftPictureBox
             // 
             this.BottomLeftPictureBox.Enabled = false;
-            this.BottomLeftPictureBox.Location = new System.Drawing.Point(637, 512);
+            this.BottomLeftPictureBox.Location = new System.Drawing.Point(782, 520);
             this.BottomLeftPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BottomLeftPictureBox.Name = "BottomLeftPictureBox";
-            this.BottomLeftPictureBox.Size = new System.Drawing.Size(106, 92);
+            this.BottomLeftPictureBox.Size = new System.Drawing.Size(140, 140);
             this.BottomLeftPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BottomLeftPictureBox.TabIndex = 21;
             this.BottomLeftPictureBox.TabStop = false;
@@ -332,7 +332,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "MainForm";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopRightPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLeftPictureBox)).EndInit();
